@@ -4,6 +4,13 @@
 
 AtliQ Hardware is growing rapidly in the recent years, and they have decided to implement the data analytics using PowerBi in their company for the first time to surpass their competitors in the market and to make data driven decisions. This project is hoped to give answers to the questions of stakeholder in terms all the aspects like finance, sales, marketing and supply chain.
 
+This project, part of the **Codebasics Bootcamp**, focuses on building an **interactive dashboard** that answers key stakeholder questions across:  
+- Finance  
+- Sales  
+- Marketing  
+- Supply Chain  
+- Executive  
+- Product
 
 [Live Report Link](https://app.powerbi.com/view?r=eyJrIjoiMjJkOGZkMGEtZWQ2Yy00ZWY3LWEyMjMtNjg4ZWU2NWIyNzk0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
@@ -14,50 +21,20 @@ AtliQ Hardware is growing rapidly in the recent years, and they have decided to 
 - Excel
 - DAX language
 - DAX studio (for optimizing the report)
-- Project charter file
 
 ## PowerBI techniques Learnt
 
-- What are all the questions should be asked before staring the project
-- Creating calculated columns
-- creating measure using DAX language
-- Data modeling
-- Using Bookmarks to switch between two visuals
-- Page navigation with buttons
-- Using divide function to prevent zero division errors
-- creating date table using m language
-- Dynamic titles based on the applied filters
-- Using KPI indicators
-- Conditional formatting the values in visuals using icons or background color
-- Data validation techniques
-- PowerBi services
-- Publishing reports to PowerBi services
-- Setting up personal gateway to set up the auto refresh of data
-- PowerBi App creation
-- Collaboration, workspace, access permissions in PowerBi services
-- And more 😅
-
-## GitHub 
-
-- Uploading Large size files using GitHub LFS
-- Tracking the particular type of file extensions for LFS
-
-## Business related terms
-
-- Gross price
-- Pre-invoice deductions
-- Post-Invoice deductions
-- Net Invoice sale
-- Gross Margin
-- Net sales
-- Net profit
-- COGC - cost of goods sold
-- YTD - Year to Date
-- YTG - Year to Go
-- Direct
-- Retailer
-- Distributors
-- Consumer
+- Data cleaning and transformations with **Power Query**  
+- **Snowflake data modeling** for efficient relationships  
+- Creating **measures and KPIs** using DAX  
+- **Dynamic titles** that respond to applied filters  
+- **Conditional formatting** with icons and colors  
+- **Bookmarks & navigation buttons** for smooth report flow  
+- **Drill-through** and **tooltips** for detailed insights  
+- **Date table creation** using M language  
+- **KPI indicators** for quick performance checks  
+- **Data validation techniques** to ensure accuracy  
+- And more 
 
 ## Company’s back ground
 
@@ -69,23 +46,6 @@ AltiQ hardware is a company which has grown vastly in the recent years, and open
 
 Recently the company has faced a unforeseen loss by opening store in America based on the surveys, intuition and some excel analysis and also the company’s competitors has handful of analytics team to perform analysis and make data driven decision. So, the AltiQ hardware has no other option other than building their analytics team for data driven insights and decisions in the future to survive better in the industry. 
 
-Project kick off session, where you should get clear of for what and why this project and all other questions you have with regards to the project
-
-### Questions to ask before starting with dashboard
-
-- What is the objective of building this PowerBi dashboard?
-- In what terms the success of this project will be measured?
-- What will be time dead-line of the project?
-- do the stakeholders expecting pre-view before the actual release?
-- What are all the hopes stakeholders have out of this project?
-- what are all fears the stakeholder have in terms of building this dashboard?
-- Who are all will be using this dashboard and for what purpose?
-- what are all expectation the stakeholders have, by the completion of this project?
-- What can go wrong while building this project?
-- what are all the resources/ data needed to build this dashboard?
-- is there any inputs from stakeholders in terms of design and views of the dashboard?
-
-After the project kick off meetings, the data engineering team has given the data as per the request of data analytics team, let’s explore them.
 
 ### Dataset **Understanding.**
 
@@ -148,70 +108,79 @@ Fact table : It will have the data about the transactions
     - Post_invoice_deductions
         - Post invoice deductions and other deductions details
 
-## Importing data into PowerBi
+## 💡 Dashboard Overview  
 
-- As the database is MySQL in this project, we need to import the datasets from Mysql database to PowerBi by providing the Database access credential
+The dashboard provides a 360° view of AtliQ Hardware’s business operations across multiple domains:  
+
+- ✅ **Home View** – Navigate seamlessly with a central landing page  
+- ✅ **Finance View** – Analyze P&L statements, Net Sales trends, and top/bottom customers & products  
+- ✅ **Sales View** – Explore customer and product performance with Net Sales, Gross Margin %, unit economics, and deductions  
+- ✅ **Marketing View** – Gain insights by market, region, product, and customer, tracking GM% and NP% across segments  
+- ✅ **Supply Chain View** – Track Forecast Accuracy, Net Error, and Absolute Error with trend analysis for optimization  
+- ✅ **Executive View** – Monitor performance at a glance with revenue by division, customer, product, and channel  
+- ✅ **Product View** – Identify top/bottom products by YoY GM% growth, top markets by revenue, and post-discount % trends per customer
+
 
 ## Data Model
+The dashboard is powered by a well-structured Snowflake schema for efficient querying and optimized performance.  
 
-- Data modeling plays a vital role and is considered as the basement of report. All the visuals will be build upon the data model.
-- Poor data modeling affects the over all performance of the report.
-- Following Good practices of data modeling is must. Refer this page to get to know the good practices [Blog](https://addendanalytics.com/blog/data-modelling-best-practices/)
-- In this project, we have followed Snowfall data modeling method.
+![Data Model](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Data%20Model.jpg)
 
-<img src="https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Data_model.png" class="center">
+---
 
-### Dashboard designing
+## Home Page
+Central navigation hub with buttons to access each domain view.  
 
-Based on the mock ups received as requirement, the team will start designing the visuals and create measure as and when required
+![Home Page](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Home%20Page.jpg)
 
-## Home view
-
-In Home view, all the views button will be available. User will land on specific view page by clicking the button 
-
-- Info
-- Finance View
-- Sales View
-- Marketing View
-- Supply chain View
-- Executive View
-- Products
-- Support
-
-## Overall Report
-
-![Overall Report.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Overall.gif)
-
-## Info Page
-
-![Info.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Info.gif)
+---
 
 ## Finance View
+Analyze Profit & Loss statements, Net Sales trends, and top/bottom customers & products.  
 
-![Finace.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Finace.gif)
+![Finance View](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Finance%20View.jpg)
+
+---
+
 ## Sales View
+Customer and product performance with insights into Net Sales, Gross Margin %, and unit economics.  
 
-![Sales.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Sales.gif)
+![Sales View](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Sales%20View.jpg)
+
+---
 
 ## Marketing View
+Market, region, product, and customer insights while tracking GM% and NP% across segments.  
 
-![Marketing.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Marketing.gif)
+![Marketing View](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Marketing%20View.jpg)
 
-## Supply chain View
+---
 
-![Supply chain.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/supply%20chain.gif)
+## Supply Chain View
+Track Forecast Accuracy, Net Error, and Absolute Error with trend analysis for supply chain optimization.  
+
+![Supply Chain View](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Supply%20Chain%20View.jpg)
+
+---
 
 ## Executive View
+High-level performance overview including revenue by division, customers, products, and channels.  
 
-![Executive.gif](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Executive.gif)
+![Executive View](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Executive%20View.jpg)
 
-## Products
+---
 
-![Products](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Resources/Products%20View.gif)
+## Product View
+Insights into top/bottom products by YoY GM% growth, top markets by revenue, and post-discount % trends per customer.  
 
-you can find the full report file here : [Report](https://github.com/Naveen-S6/Business_Insights_360/blob/main/Report/360.pbix)
+![Product View](https://github.com/tushar2555/Business-Insights-360/blob/main/Images/Product%20View.jpg)
 
+## Project Outcome  
 
-## Project Outcome
+This project demonstrates how **1.5M+ rows of raw data** were transformed into an **interactive, decision-focused dashboard**.  
 
-By using this report, decisions can be taken based on the data. Further it will help in answering n number of why questions based on the situations.
+It enables:  
+- **Finance Teams** → Monitor profitability and sales performance.  
+- **Sales & Marketing Teams** → Identify key customers, products, and markets.  
+- **Supply Chain Teams** → Track forecast accuracy and optimize planning.  
+- **Executives** → Make smarter and faster decisions with confidence.  
