@@ -12,7 +12,7 @@ This project, part of the **Codebasics Bootcamp**, focuses on building an **inte
 - Executive  
 - Product
 
-[Live Report Link](https://app.powerbi.com/view?r=eyJrIjoiMjJkOGZkMGEtZWQ2Yy00ZWY3LWEyMjMtNjg4ZWU2NWIyNzk0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+**Live Dashboard:** [Click here](https://app.powerbi.com/view?r=eyJrIjoiMjJkOGZkMGEtZWQ2Yy00ZWY3LWEyMjMtNjg4ZWU2NWIyNzk0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 ## Tech stacks
 
@@ -108,17 +108,17 @@ Fact table : It will have the data about the transactions
     - Post_invoice_deductions
         - Post invoice deductions and other deductions details
 
-## 💡 Dashboard Overview  
+## Dashboard Overview  
 
 The dashboard provides a 360° view of AtliQ Hardware’s business operations across multiple domains:  
 
-- ✅ **Home View** – Navigate seamlessly with a central landing page  
-- ✅ **Finance View** – Analyze P&L statements, Net Sales trends, and top/bottom customers & products  
-- ✅ **Sales View** – Explore customer and product performance with Net Sales, Gross Margin %, unit economics, and deductions  
-- ✅ **Marketing View** – Gain insights by market, region, product, and customer, tracking GM% and NP% across segments  
-- ✅ **Supply Chain View** – Track Forecast Accuracy, Net Error, and Absolute Error with trend analysis for optimization  
-- ✅ **Executive View** – Monitor performance at a glance with revenue by division, customer, product, and channel  
-- ✅ **Product View** – Identify top/bottom products by YoY GM% growth, top markets by revenue, and post-discount % trends per customer
+- **Home View** – Navigate seamlessly with a central landing page  
+- **Finance View** – Analyze P&L statements, Net Sales trends, and top/bottom customers & products  
+- **Sales View** – Explore customer and product performance with Net Sales, Gross Margin %, unit economics, and deductions  
+- **Marketing View** – Gain insights by market, region, product, and customer, tracking GM% and NP% across segments  
+- **Supply Chain View** – Track Forecast Accuracy, Net Error, and Absolute Error with trend analysis for optimization  
+- **Executive View** – Monitor performance at a glance with revenue by division, customer, product, and channel  
+- **Product View** – Identify top/bottom products by YoY GM% growth, top markets by revenue, and post-discount % trends per customer
 
 
 ## Data Model
