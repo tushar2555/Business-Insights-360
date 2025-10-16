@@ -5,7 +5,7 @@
 AtliQ Hardware is growing rapidly in the recent years, and they have decided to implement the data analytics using PowerBi in their company for the first time to surpass their competitors in the market and to make data driven decisions. This project is hoped to give answers to the questions of stakeholder in terms all the aspects like finance, sales, marketing and supply chain.
 
 
-[Live Report Link](<iframe title="AtliQ Hardware Business Insights 360" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjJkOGZkMGEtZWQ2Yy00ZWY3LWEyMjMtNjg4ZWU2NWIyNzk0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" frameborder="0" allowFullScreen="true"></iframe>)
+[Live Report Link][(<iframe title="AtliQ Hardware Business Insights 360" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjJkOGZkMGEtZWQ2Yy00ZWY3LWEyMjMtNjg4ZWU2NWIyNzk0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" frameborder="0" allowFullScreen="true"></iframe>)]
 
 ## Tech stacks
 
